@@ -6,9 +6,9 @@ import { AlertController } from '@ionic/angular';
   templateUrl: './alert.page.html',
   styleUrls: ['./alert.page.scss'],
 })
-export class AlertPage {
+export class AlertPage  {
 
-  constructor(public alertController: AlertController) { }
+  constructor(public alertController: AlertController) {}
 
   async presentAlert() {
     const alert = await this.alertController.create({
@@ -16,23 +16,7 @@ export class AlertPage {
       header: 'Alert',
       subHeader: 'Subtitle',
       message: 'This is an alert message.',
-      buttons: [
-        {
-          text: 'Cancel',
-          role: 'cancel',
-          cssClass: 'secondary',
-          handler: (blah) => {
-            console.log('BOTON CANCELAR');
-          }
-        },
-        {
-          text: 'OK',
-          cssClass: 'secondary',
-          handler: (blah) => {
-            console.log('BOTON OK');
-          }
-        }
-      ]
+      buttons: ['OK']
     });
 
     await alert.present();
