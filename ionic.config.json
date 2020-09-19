@@ -1,0 +1,8 @@
+{
+  "name": "pps_tp1",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "1fdee891"
+}
