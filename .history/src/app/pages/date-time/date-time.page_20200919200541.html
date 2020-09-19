@@ -1,0 +1,35 @@
+<app-header titulo="date Time"></app-header>
+
+<ion-content>
+
+    <ion-list>
+
+        <ion-list-header>
+            <ion-label>Datos de Nacimiento</ion-label>
+        </ion-list-header>
+        <ion-item>
+            <ion-label>Fecha de Nacimiento</ion-label>
+            <ion-datetime placeholder="fecha de Nacimiento" display-format="YYYY MMMM DD" canceltext="Cancelar !!" [ngModel]="fechaNacimiento.toISOString()" (ionChange)="cambioFecha( $event )"></ion-datetime>
+        </ion-item>
+
+        <ion-list-header>
+            <ion-label>Restricciones</ion-label>
+        </ion-list-header>
+        <ion-item>
+            <ion-label>min y max</ion-label>
+            <ion-datetime placeholder="yyyy-mm-dd" display-format="YYYY MMMM DD" min="2015-01-01" max="2015-12-31" canceltext="Cancelar !!"></ion-datetime>
+        </ion-item>
+
+        <ion-list-header>
+            <ion-label>Restricciones</ion-label>
+        </ion-list-header>
+        <ion-item>
+            <ion-label>min y max</ion-label>
+            <ion-datetime placeholder="yyyy" display-format="YYYY" min="2015" max="2025" value="2020" canceltext="Cancelar !!"></ion-datetime>
+        </ion-item>
+
+
+    </ion-list>
+
+
+</ion-content>
