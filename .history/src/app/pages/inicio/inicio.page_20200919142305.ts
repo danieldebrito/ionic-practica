@@ -25,7 +25,7 @@ export class InicioPage implements OnInit {
     },
     {
       icon: 'leaf-outline',
-      name: 'Buttons y Router',
+      name: 'Buttons',
       redirectTo: '/buttons',
     }
   ];

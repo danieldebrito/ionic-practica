@@ -1,5 +1,4 @@
-<app-header [titulo]="titulo || 'Alert Page' ">
-    <!--  si no existe titulo, pone "alert page", magia de js -->
+<app-header titulo="Alert Page">
 </app-header>
 
 <ion-content>
@@ -7,7 +6,7 @@
     <ion-button expand="full" color="primary" (click)="presentAlert()">
         Action Sheet
     </ion-button>
-    <ion-button expand="full" color="secondary" (click)="presentAlertPrompt()">
+    <ion-button expand="full" color="secondary" (click)="presentAlert()">
         Mostrar Input
     </ion-button>
 

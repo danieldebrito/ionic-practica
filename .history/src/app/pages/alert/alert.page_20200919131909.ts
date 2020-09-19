@@ -8,8 +8,6 @@ import { AlertController } from '@ionic/angular';
 })
 export class AlertPage {
 
-  public titulo: string;
-
   constructor(public alertController: AlertController) { }
 
   async presentAlert() {
@@ -61,7 +59,6 @@ export class AlertPage {
         }, {
           text: 'Ok',
           handler: ( data ) => {
-            this.titulo = data.txtNombre;
             console.log('Confirm Ok', data);
           }
         }
