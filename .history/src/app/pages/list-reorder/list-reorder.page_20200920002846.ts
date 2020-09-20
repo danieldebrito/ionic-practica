@@ -17,8 +17,7 @@ export class ListReorderPage implements OnInit {
   }
 
   public reorder(event){
-    const itemRemver = this.ramones.splice( event.detail.from, 1 ) [0];
-    this.ramones.splice( event.detail.to, 0, itemRemver );
-    event.detail.complete();
+    console.log(event);
   }
+
 }
