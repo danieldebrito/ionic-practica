@@ -1,0 +1,25 @@
+<app-header titulo="lista sliding"></app-header>
+
+<ion-content>
+
+    <ion-list>
+
+        <ion-item-sliding *ngFor="let item of usuarios | async ">
+            <ion-item>
+
+                <ion-label>
+                    <h3>{{ item.name }}</h3>
+                    <p> {{ item.email }} </p>
+                </ion-label>
+
+                <ion-label slot="end" text-right>
+                    {{ item.phone }}
+                </ion-label>
+
+            </ion-item>
+        </ion-item-sliding>
+
+
+    </ion-list>
+
+</ion-content>
