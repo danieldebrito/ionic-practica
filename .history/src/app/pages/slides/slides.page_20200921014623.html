@@ -1,0 +1,9 @@
+<ion-content>
+    <ion-slides pager="true" class="slide-full">
+        <ion-slide *ngFor="let item of slides">
+            <ion-card mode="ios">
+                <img [src]="item.img">
+            </ion-card>
+        </ion-slide>
+    </ion-slides>
+</ion-content>

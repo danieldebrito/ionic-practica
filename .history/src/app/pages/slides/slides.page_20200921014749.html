@@ -1,9 +1,3 @@
-<ion-header no-border ngClass="ocultar">
-    <ion-toolbar>
-        <img src="/assets/slides/user-6.svg" class="avatar animated fadeIn">
-    </ion-toolbar>
-</ion-header>
-
 <ion-content>
     <ion-slides pager="true" class="slide-full">
         <ion-slide *ngFor="let item of slides">
@@ -18,10 +12,6 @@
                 </ion-card-content>
 
             </ion-card>
-        </ion-slide>
-
-        <ion-slide>
-            <ion-button expand="full" color="primary" fill="clear" (click)="onClick()">Comenzar</ion-button>
         </ion-slide>
     </ion-slides>
 </ion-content>

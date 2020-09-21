@@ -8,8 +8,6 @@ import { NavController } from '@ionic/angular';
 })
 export class SlidesPage implements OnInit {
 
-  ocultar = ''; // para mejorar la visual en ios
-
   slides: { img: string, titulo: string, desc: string }[] = [
     {
       img: '/assets/slides/photos.svg',
@@ -40,8 +38,6 @@ export class SlidesPage implements OnInit {
 
   onClick() {
     this.navControler.navigateBack('/');
-    this.ocultar = 'animated fadeOut fast';
-
   }
 
 }

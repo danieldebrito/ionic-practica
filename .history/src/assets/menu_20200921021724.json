@@ -106,6 +106,6 @@
     {
         "icon": "cog",
         "name": "tabs",
-        "redirectTo": "/tabs/account"
+        "redirectTo": "/tabs"
     }
 ]

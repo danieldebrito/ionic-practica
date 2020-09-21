@@ -17,7 +17,7 @@ export class ListaPage implements OnInit {
   constructor(
     private dataService: DataService,
     private toastController: ToastController
-  ) { }
+    ) { }
 
   ngOnInit() {
     this.usuarios = this.dataService.getUsers();
@@ -32,17 +32,17 @@ export class ListaPage implements OnInit {
   }
 
   public favorite(user) {
-    this.presentToast('guardo en favoritos');
+    console.log(user);
     this.lista.closeSlidingItems();
   }
 
   public borrar(user) {
-    this.presentToast('borrado');
+    console.log(user);
     this.lista.closeSlidingItems();
   }
 
   public share(user) {
-    this.presentToast('compartido');
+    console.log(user);
     this.lista.closeSlidingItems();
   }
 }

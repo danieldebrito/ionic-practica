@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-slides',
@@ -7,8 +6,6 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./slides.page.scss'],
 })
 export class SlidesPage implements OnInit {
-
-  ocultar = ''; // para mejorar la visual en ios
 
   slides: { img: string, titulo: string, desc: string }[] = [
     {
@@ -33,15 +30,13 @@ export class SlidesPage implements OnInit {
     }
   ];
 
-  constructor(private navControler: NavController) { }
+  constructor() { }
 
   ngOnInit() {
   }
 
-  onClick() {
-    this.navControler.navigateBack('/');
-    this.ocultar = 'animated fadeOut fast';
-
+  onClick(){
+    
   }
 
 }

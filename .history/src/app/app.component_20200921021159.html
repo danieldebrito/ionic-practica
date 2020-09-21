@@ -1,6 +1,6 @@
 <ion-app>
 
-    <ion-split-pane when="md" contentId="main">
+    <ion-split-pane contentId="main">
 
         <!--<app-menu></app-menu>-->
         <ion-menu side="start" menuId="first" contentId="main">
@@ -12,7 +12,7 @@
             <ion-content>
                 <ion-list>
 
-                    <ion-menu-toggle autoHide="false" *ngFor="let item of componentes | async">
+                    <ion-menu-toggle *ngFor="let item of componentes | async">
                         <ion-item [routerLink]="item.redirectTo">
                             <ion-icon slot="start" [name]=item.icon> </ion-icon>
                             <ion-label>{{ item.name }}</ion-label>
